@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Meu Web Portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/extends.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <!-- script -->
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <div>
+                <h2>Gabriel Neves</h2>
+            </div>
+            <ul class="navbar__links">
+                <li><a href="#header">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+            <div class="navbar__mobile">
+                <img src="assets/menu.svg" alt="menu" class="burguer">
+                <ul class="mobile__links">
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="max-width">
+        <div class="header__left">
+            <h1>Olá! Sou Gabriel Neves, Desenvolvedor Front-end</h1>
+            <p>Desenvolvedor web em constante aprendizado, com base sólida em tecnologias direcionadas Front-end, tendo como foco principal o desenvolvimento de aplicações em Vue.js.</p>
+            <button class="btn__header"><a href="#about" class="#">Saiba mais!</a></button>
+        </div>
+        <div class="header__right">
+            <div class="header__image">
+                <img src="assets/gneves.png" alt="Gabriel Neves" class="neves">
+                <img src="assets/abstract.svg" alt="background" class="background">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="about" class="about max-width">
+        <div class="about__left">
+            <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+            <p>
+                Que tal se conectar comigo através das minhas redes sociais para saber um pouco mais sobre quem sou?
+            </p>
+            <ul>
+                <li><a href="https://www.instagram.com/pierneves_gabl/" target="_blank"><img src="assets/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/gabrielnevesp/" target="_blank"><img src="assets/linkedin.svg" alt="Linkedin"></a></li>
+                <li><a href="https://github.com/Gabrielneves05" target="_blank"><img src="assets/github.svg" alt="Github"></a></li>
+            </ul>
+        </div>
+        <div class="about__right">
+            <h3 class="tertiary-title mb-m">
+                Desenvolvedor Front-end desvendando o mundo tech e buscando um aprendizado sólido em soluções criativas.
+            </h3>
+            <p>
+                Olá! Me chamo Gabriel Neves, tenho 25 anos, estudo e me empenho por uma colocação no mercado de trabalho voltado para a área de TI há mais ou menos 3 anos. Sou um Desenvolvedor Front-end em constante aprendizado, com foco no desenvolvimento web de aplicações em Vue.js.
+            </p>
+            <p>
+                A minha escolha pelo desenvolvimento web partiu da ideia que tive de que seria incrível não só planejar e desenvolver soluções inovadoras e criativas para diversos problemas bastante complexos, mas ver tudo acontecendo de forma instantânea. A partir desse pensamento centralizei o meu foco e meus estudos totalmente para o Front-end buscando ter, já de inicio, um objetivo e crescer como profissional na área.
+            </p>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="skills__content max-width">
+            <h2 class="tertiary-title">Minha caixinha de ferramentas</h2>
+            <p class="description">
+                Descubra algumas habilidades e ferramentas que domino ou estou um pouco mais familiarizado.
+            </p>
+            <ul class="all_skills">
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="assets/notebook.png" alt="Desenvolvimento Web">
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>
+                        Conhecimento avançado em desenvolvimento Front-end com foco em tecnologias modernas.
+                    </p>
+                </li>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="assets/colors.png" alt="Web Design">
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>
+                        Capacidade de criar layouts responsivos utilizando psicologia das cores, com o intuito de otimizar a experiência dos usuários.
+                    </p>
+                </li>
+                <li class="skills__item center">
+                    <div class="image-container">
+                        <img src="assets/files.png" alt="Gerenciamento de Versões">
+                    </div>
+                    <h3>Gerenciamento de Versões</h3>
+                    <p>
+                        Habituado ao uso de ferramentas de gerenciamento de versão para controle de projetos.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="projects max-width">
+        <div class="projects__content">
+            <h2 class="secondary-title">Projetos em destaque</h2>
+            <p>
+                Aqui estão alguns dos meus trabalhos mais recentes! Uns um pouco menos e outros um pouco mais trabalhados, mas resolvi expor todos para que se possa ter uma idéia da minha evolução a cada projeto.
+            </p>
+        </div>
+        <ul>
+            <li>
+                <div class="image">
+                    <img src="assets/task-manager.png" alt="Gerenciamento de tarefas">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Sistema de gerenciamento de tarefas</h3>
+                    <p>Sistema web desenvolvido com funcionalidades como cadastro de tarefas, verificação de cumprimento e remoção das mesmas.</p>
+                    <button class="btn__projects"><a href="https://gabrielneves05.github.io/lista-de-tarefas/" target="_blank">Acesse</a></button>
+                </div>
+            </li>
+            <li class="projects__reversed-list">
+                <div class="image">
+                    <img src="assets/qrcode.png" alt="qrcode">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Gerador de QRCode</h3>
+                    <p>Sistema que utiliza API capaz de gerar QRCodes através de URL's enviadas por um campo de preenchimento.</p>
+                    <button class="btn__projects"><a href="https://gabrielneves05.github.io/gerador-qrcode/" target="_blank">Acesse</a></button>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="assets/cronometro.png" alt="Cronômetro">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Cronômetro</h3>
+                    <p>Cronômetro desenvolvido para demonstrar habilidades básicas de estilização e interação utilizando Javascript, HTML e CSS.</p>
+                    <button class="btn__projects"><a href="https://gabrielneves05.github.io/cronometro-js/" target="_blank">Acesse</a></button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer__content max-width m-0">
+            <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+            <p class="mb-m">
+                Ficarei feliz em ter a oportunidade de conhecer mais sobre os projetos da empresa, trabalhar junto das equipes responsáveis para colaborar com os interesses da empresa e me desenvolver profissionalmente na área aprendendo a cada vez um pouco mais.
+            </p>
+            <div class="footer__contact mb-m">
+                <span class="mb-m">gneves17@outlook.com</span>
+                <span>(13) 99645-1425</span>
+            </div>
+            <ul class="mb-l">
+                <li><a href="https://www.instagram.com/pierneves_gabl/" target="_blank"><img src="assets/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/gabrielnevesp/" target="_blank"><img src="assets/linkedin.svg" alt="Linkedin"></a></li>
+                <li><a href="https://github.com/Gabrielneves05" target="_blank"><img src="assets/github.svg" alt="Github"></a></li>
+            </ul>
+            <p class="footer__copyright">
+                &copy; 2023 Gabriel Neves. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
