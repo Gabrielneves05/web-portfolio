@@ -84,14 +84,15 @@ a:hover {
     width: 100%;
     height: 2px;
     background-color: #fff;
-    transition: all 0.3 ease-in-out;
+    transition: all 1s;
 }
 
-.hamburger-icon span:hover {
-    color: #59B2F4;
+.hamburger-icon:hover span {
+    box-shadow: 0 0 10px 3px #ffffffa1;
 }
 
 .menu-links {
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -127,16 +128,21 @@ a:hover {
     border-radius: 5px;
 }
 
-.hamburger-icon.open span:first-child {
+.hamburger-icon span.top-line {
+    width: 35px;
+}
+
+.hamburger-icon span.down-line {
+    width: 20px;
+}
+
+.hamburger-icon.open span.top-line {
     transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
+.hamburger-icon.open span.down-line {
+    transform: rotate(-45deg) translate(10px, -6px);
+    width: 35px;
 }
 
 .menu-links.close {
