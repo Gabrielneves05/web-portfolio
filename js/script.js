@@ -3,7 +3,10 @@ const menuLinks = document.querySelector('.menu-links');
 
 const menuItems = document.querySelectorAll('.menu-links a');
 
-hamburgerIcon.addEventListener('click', (event) => {
+const btnCv = document.querySelector('.btn-cv');
+const btnContact = document.querySelector('.btn-contact');
+
+hamburgerIcon.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('open');
     menuLinks.classList.toggle('open');
 
@@ -23,4 +26,13 @@ menuItems.forEach(item => {
         hamburgerIcon.classList.add('close');
         menuLinks.classList.add('close');
     })
+});
+
+btnCv.addEventListener('click', () => {
+    window.open('./assets/curriculo-gabrielneves.att.pdf');
+});
+
+btnContact.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.href = './#contact';
 })

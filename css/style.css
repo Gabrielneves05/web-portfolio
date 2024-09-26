@@ -91,6 +91,23 @@ a:hover {
     box-shadow: 0 0 10px 3px #ffffffa1;
 }
 
+.hamburger-icon span.top-line {
+    width: 35px;
+}
+
+.hamburger-icon span.down-line {
+    width: 35px;
+}
+
+.hamburger-icon.open span.top-line {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span.down-line {
+    transform: rotate(-45deg) translate(10px, -6px);
+    width: 35px;
+}
+
 .menu-links {
     display: none;
     position: absolute;
@@ -126,23 +143,6 @@ a:hover {
 .menu-links.open {
     max-height: 300px;
     border-radius: 5px;
-}
-
-.hamburger-icon span.top-line {
-    width: 35px;
-}
-
-.hamburger-icon span.down-line {
-    width: 20px;
-}
-
-.hamburger-icon.open span.top-line {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span.down-line {
-    transform: rotate(-45deg) translate(10px, -6px);
-    width: 35px;
 }
 
 .menu-links.close {
