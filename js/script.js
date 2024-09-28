@@ -6,6 +6,8 @@ const menuItems = document.querySelectorAll('.menu-links a');
 const btnCv = document.querySelector('.btn-cv');
 const btnContact = document.querySelector('.btn-contact');
 
+const iconLinkedin = document.querySelector('.icon-linkedin');
+
 hamburgerIcon.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('open');
     menuLinks.classList.toggle('open');
@@ -35,4 +37,4 @@ btnCv.addEventListener('click', () => {
 btnContact.addEventListener('click', (event) => {
     event.preventDefault();
     window.location.href = './#contact';
-})
+});
