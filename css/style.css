@@ -11,8 +11,8 @@ body {
     color: #fff;
 }
 
-html {
-    scroll-behavior: smooth;
+html body {
+    scroll-behavior: smooth !important;
 }
 
 p {
@@ -258,6 +258,48 @@ section {
     gap: 1rem;
 }
 
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, 
+.about-details-container {
+    display: flex;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    margin-top: 10rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(81, 172, 247) 0.1rem solid;
+    text-align: center;
+}
+
+.details-container img {
+    cursor: default;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 50%;
+}
 
 @media screen and (max-width:720px) {
     #nav-container {
