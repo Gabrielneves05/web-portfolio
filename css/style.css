@@ -11,8 +11,8 @@ body {
     color: #fff;
 }
 
-html body {
-    scroll-behavior: smooth !important;
+html {
+    scroll-behavior: smooth;
 }
 
 p {
@@ -209,6 +209,11 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    transition: transform .8s;
+}
+
+.icon:hover {
+    transform: scale(1.20);
 }
 
 .btn-container {
