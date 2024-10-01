@@ -6,7 +6,7 @@ const menuItems = document.querySelectorAll('.menu-links a');
 const btnCv = document.querySelector('.btn-cv');
 const btnContact = document.querySelector('.btn-contact');
 
-const arrowForProjects = document.querySelector('.arrow');
+const arrowForProjects = document.querySelector('.arrow-icon');
 
 hamburgerIcon.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('open');
