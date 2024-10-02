@@ -275,6 +275,7 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    cursor: default;
 }
 
 .about-containers, 
@@ -311,10 +312,50 @@ section {
     margin-top: 4rem;
 }
 
+.skills-details-container {
+    display: flex;
+}
+
 .skills-details-container .details-container {
     display: flex;
     gap: 2rem;
+    flex-direction: row;
     margin-top: 4rem;
+    cursor: default;
+}
+
+#skills {
+    position: relative;
+}
+
+.details-article-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(81, 172, 247) 0.1rem solid;
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    gap: 0.5rem;
+}
+
+.icon-skills {
+    height: 2rem;
 }
 
 @media screen and (max-width:720px) {
