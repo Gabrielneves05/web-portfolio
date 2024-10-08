@@ -205,13 +205,13 @@
         </a>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="projects-details-container">
             <p class="text-one">Meus mais recentes</p>
             <h1 class="title">Projetos</h1>
             <ul>
-                <li>
-                    <div class="details-container image">
+                <li class="responsive">
+                    <div class="details-container-img image">
                         <img src="assets/weather-forecast.jpg" alt="Previsão do Tempo">
                     </div>
                     <div class="projects-info">
@@ -220,8 +220,8 @@
                         <button class="btn btn-color-2 project-btn"><a href="https://weather-forecast-eight-beta.vercel.app/" target="_blank">Acesse</a></button>
                     </div>
                 </li>             
-                <li class="projects-info__reversed-list">
-                    <div class="details-container image">
+                <li class="projects-info__reversed-list responsive">
+                    <div class="details-container-img image">
                         <img src="assets/finance.jpg" alt="Gerenciador Financeiro">
                     </div>
                     <div class="projects-info">
@@ -230,8 +230,8 @@
                         <button class="btn btn-color-2 project-btn"><a href="https://financial-management-system-blond.vercel.app/" target="_blank">Acesse</a></button>
                     </div>
                 </li>
-                <li>
-                    <div class="details-container image">
+                <li class="responsive">
+                    <div class="details-container-img image">
                         <img src="assets/task-manager.png" alt="Lista de Tarefas">
                     </div>
                     <div class="projects-info">
@@ -243,5 +243,34 @@
             </ul>
         </div>
     </section>
+
+    <section id="contact">
+        <p class="text-one">Entre em contato</p>
+        <h1 class="title">Comigo</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/o-email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="gabrielneves05@gmail.com">gabrielneves05@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin-contact.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/gabrielnevesp/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &copy; 2024 Gabriel Neves. Todos os Direitos Reservados.</p>
+    </footer>
 </body>
 </html>

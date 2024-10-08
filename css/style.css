@@ -16,8 +16,12 @@ html {
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
 p {
     color: #fff;
+    cursor: default;
 }
 
 /* NAVBAR */
@@ -112,7 +116,6 @@ a:hover {
 }
 
 .menu-links {
-    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -282,7 +285,6 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-    cursor: default;
 }
 
 .about-containers, 
@@ -330,7 +332,6 @@ section {
     gap: 2rem;
     flex-direction: row;
     margin-top: 4rem;
-    cursor: default;
 }
 
 #skills {
@@ -373,7 +374,7 @@ article {
     margin-bottom: 16rem;
 }
 
-ul {
+.projects ul {
     margin-top: 4rem;
 }
 
@@ -401,15 +402,19 @@ ul li {
     margin-bottom: 8rem;
 }
 
-.projects ul li .details-container {
-    flex: none;
-}
-
 .projects ul li .image img {
     width: 100%; 
     min-width: 30rem;
     max-width: 37rem;
     height: auto;
+}
+
+.details-container-img {
+    padding: 1.5rem;
+    flex: none;
+    border-radius: 2rem;
+    border: rgb(81, 172, 247) 0.1rem solid;
+    text-align: center;
 }
 
 .projects ul li .projects-info {
@@ -425,12 +430,56 @@ ul li {
     color: #fff;
 }
 
-@media screen and (max-width: 720px) {
-    #nav-container {
-        display: none;
-    }
+/* CONTACT */
 
-    #hamburger-nav {
-        display: flex;
-    }
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(81, 172, 247) 0.1rem solid;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-info-container a {
+    font-weight: 600;
+}
+
+.contact-icon {
+    height: 2rem;
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0 1rem;
+}
+
+footer p {
+    margin-top: 1.5rem;
+    text-align: center;
 }
