@@ -7,6 +7,7 @@
 }
 
 body {
+    padding-top: 8vh;
     font-family: "Nunito", sans-serif;
     background-color: rgb(25, 31, 54);
     color: #eee;
@@ -26,10 +27,129 @@ p {
 
 /* NAVBAR */
 
-a, 
-.btn {
-    transition: all 300ms ease;
+span {
+    color: #59B2F4;
 }
+
+#nav-container,
+#hamburger-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #23232e;
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+#nav-container .nav-name,
+#hamburger-nav .nav-name {
+    font-size: 2rem;
+}
+
+#nav-container ul.nav-links,
+#hamburger-nav .menu-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+#nav-container ul.nav-links li,
+#hamburger-nav .menu-links ul li {
+    margin-left: 32px;
+}
+
+#nav-container ul.nav-links li a,
+#hamburger-nav .menu-links ul li a {
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#nav-container ul.nav-links li a:hover,
+#hamburger-nav .menu-links ul li a:hover {
+    color: #59B2F4;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-icon span {
+    width: 32px;
+    height: 2px;
+    background: #eee;
+    margin: 6px;
+    transition: all 0.7s;
+}
+
+.hamburger-icon.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-icon.open .line2 {
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.menu-links {
+    position: absolute;
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 100%;
+    height: 92vh;
+    background-color: rgba(35, 35, 46, .8);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #eee;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 1000;
+}
+
+.menu-links.open {
+    transform: translateX(0);
+}
+
+.menu-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-links ul li {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/*
 
 nav, 
 .nav-links {
@@ -67,9 +187,11 @@ a:hover {
     color: #59B2F4;
     text-decoration: underline;
     text-underline-offset: 1rem;
-}
+} */
 
-#hamburger-nav {
+
+
+/* #hamburger-nav {
     display: none;
 }
 
@@ -154,11 +276,11 @@ a:hover {
 .menu-links.close {
     max-height: 0;
     transition: max-height 0.3s ease-in-out;
-}
+} */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
+    margin-top: 4rem;
+    height: 85vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -275,6 +397,7 @@ section {
 
 #about {
     position: relative;
+    margin-top: 7rem;
 }
 
 .about-containers {
@@ -296,7 +419,7 @@ section {
 .icon-arrow {
     position: absolute;
     right: -5rem;
-    margin-top: 10rem;
+    margin-top: rem;
     height: 2rem;
     transition: transform .8s;
 }
@@ -372,6 +495,7 @@ article {
 /* PROJETOS */
 
 .projects {
+    margin-top: 11rem;
     margin-bottom: 16rem;
 }
 
@@ -463,6 +587,8 @@ ul li {
 
 .contact-info-container a {
     font-weight: 600;
+    text-decoration: none;
+    color: #eee;
 }
 
 .contact-icon {
@@ -476,11 +602,34 @@ ul li {
 
 /* FOOTER */
 
+.nav-links-container {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
-    margin: 0 1rem;
+    margin: 0 10rem;
 }
 
 footer p {
     margin-top: 1.5rem;
     text-align: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+    transition: all 0.3s;
+}
+
+footer ul li {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+footer a:hover {
+    color: #59B2F4;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 }

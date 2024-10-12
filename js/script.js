@@ -6,6 +6,8 @@ const menuItems = document.querySelectorAll('.menu-links a');
 const btnCv = document.querySelector('.btn-cv');
 const btnContact = document.querySelector('.btn-contact');
 
+const body = document.querySelector('body');
+
 hamburgerIcon.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('open');
     menuLinks.classList.toggle('open');
@@ -13,9 +15,11 @@ hamburgerIcon.addEventListener('click', () => {
     if(hamburgerIcon.classList.contains('open')) {
         hamburgerIcon.classList.remove('close');
         menuLinks.classList.remove('close');
+        body.classList.add('no-scroll');
     } else {
         hamburgerIcon.classList.add('close');
         menuLinks.classList.add('close');
+        body.classList.remove('no-scroll');
     }
 });
 
@@ -25,6 +29,7 @@ menuItems.forEach(item => {
         menuLinks.classList.remove('open');
         hamburgerIcon.classList.add('close');
         menuLinks.classList.add('close');
+        body.classList.remove('no-scroll');
     })
 });
 
