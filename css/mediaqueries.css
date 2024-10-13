@@ -66,6 +66,10 @@
         overflow-x: hidden;
     }
 
+    section {
+        padding: 5rem 0;
+    }
+
     .responsive {
         display: flex;
         flex-direction: column !important;
@@ -73,13 +77,13 @@
 
     .projects ul li .image img {
         min-width: 0%;
-    } 
+    }
 }
 
 @media screen and (max-width: 600px) {
     #contact, 
     footer {
-        height: 40vh;
+        height: 30vh;
     }
 
     #profile {
