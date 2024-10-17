@@ -36,7 +36,7 @@ span {
 #skills, 
 #projects, 
 #contact {
-    height: auto; /* Remova qualquer altura fixa */
+    height: auto;
 }
 
 #nav-container,
@@ -164,7 +164,7 @@ section {
     min-height: auto;
 }
 
-/* PERFIL */
+/* PROFILE */
 
 .section-container {
     display: flex;
@@ -271,7 +271,7 @@ section {
     gap: 1rem;
 }
 
-/* SOBRE */
+/* ABOUT */
 
 #about {
     position: relative;
@@ -322,7 +322,7 @@ section {
     margin-top: 4rem;
 }
 
-/* HABILIDADES */
+/* SKILLS */
 
 .skills-details-container {
     display: flex;
@@ -369,7 +369,7 @@ article {
     height: 2rem;
 }
 
-/* PROJETOS */
+/* PROJECTS */
 
 .projects ul {
     margin-top: 4rem;
@@ -461,6 +461,13 @@ ul li {
     font-weight: 600;
     text-decoration: none;
     color: #eee;
+    transition: all 0.3s;
+}
+
+.contact-info-container a:hover {
+    color: #59B2F4;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 }
 
 .contact-icon {

@@ -18,10 +18,6 @@
         display: flex;
     }
 
-    #skills, .skills-details-container {
-        margin-top: 2rem;
-    }
-
     #profile, .section-container {
         display: block;
     }
@@ -67,7 +63,7 @@
     }
 
     section {
-        padding: 5rem 0;
+        padding: 6rem 0;
     }
 
     .responsive {
@@ -77,6 +73,10 @@
 
     .projects ul li .image img {
         min-width: 0%;
+    }
+
+    #contact {
+        margin-top: 10rem;
     }
 }
 
