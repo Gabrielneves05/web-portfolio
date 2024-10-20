@@ -293,6 +293,10 @@ section {
     display: flex;
 }
 
+.about-containers .details-container p {
+    margin: 10px 0 0;
+}
+
 .icon-arrow {
     position: absolute;
     right: -5rem;
@@ -333,6 +337,10 @@ section {
     gap: 2rem;
     flex-direction: row;
     margin-top: 4rem;
+}
+
+.skills-info p {
+    margin: 10px 0 0;
 }
 
 #skills {
@@ -419,7 +427,21 @@ ul li {
 }
 
 .projects ul li .projects-info p {
-    margin: 1rem 0 2rem;
+    margin: 2rem 0 0.5rem;
+}
+
+.tech-used {
+    display: flex;
+    height: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-used .icon-react {
+    height: 2rem;
+}
+
+.tech-used img {
+    margin-right: 0.5rem;
 }
 
 .projects ul li .projects-info a {
