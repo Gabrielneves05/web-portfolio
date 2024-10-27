@@ -444,6 +444,11 @@ ul li {
     margin-right: 0.5rem;
 }
 
+.tech-used .icon-tailwind {
+    width: 2.4rem;
+    height: 1.8rem;
+}
+
 .projects ul li .projects-info a {
     text-decoration: none;
     color: #eee;
