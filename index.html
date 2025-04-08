@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <span class="logo-text">Portfólio</span>
+                    <span class="logo-dot"></span>
+                </a>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active" data-text="Início">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link" data-text="Sobre">Sobre</a></li>
+                    <li class="nav-item"><a href="#experiencia" class="nav-link" data-text="Experiência">Experiência</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link" data-text="Projetos">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link" data-text="Contato">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="theme-toggle">
+                <div class="toggle-track">
+                    <div class="toggle-indicator">
+                        <div class="indicator-icon">
+                            <span class="icon-moon">🌙</span>
+                            <span class="icon-sun">☀️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <svg class="hamburger" viewBox="0 0 100 100" width="30">
+                    <rect class="line line-top" width="80" height="5" x="10" y="25" rx="2.5"></rect>
+                    <rect class="line line-middle" width="80" height="5" x="10" y="45" rx="2.5"></rect>
+                    <rect class="line line-bottom" width="80" height="5" x="10" y="65" rx="2.5"></rect>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <ul class="mobile-nav-links">
+                <li class="mobile-nav-item"><a href="#inicio" class="mobile-nav-link active">Início</a></li>
+                <li class="mobile-nav-item"><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+                <li class="mobile-nav-item"><a href="#experiencia" class="mobile-nav-link">Experiência</a></li>
+                <li class="mobile-nav-item"><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+                <li class="mobile-nav-item"><a href="#contato" class="mobile-nav-link">Contato</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero section para demonstração -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-flex-container">
+                    <div class="profile-image-container">
+                        <img src="images/perfil.jpg" alt="Gabriel" class="profile-image" />
+                    </div>
+                    <div class="hero-text">
+                        <p class="hero-greeting">Olá, sou o Gabriel</p>
+                        <h1 class="hero-title">
+                            <span class="text-reveal">Desenvolvedor Web</span>
+                        </h1>
+                        <div class="hero-details">
+                            <p class="hero-subtitle">Transformando ideias em experiências digitais memoráveis</p>
+                            <div class="hero-cta">
+                                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                                <a href="#contato" class="btn btn-secondary">Contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+     <!-- Seção Sobre -->
+     <section class="about" id="sobre">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis e intuitivas. Minha jornada no mundo do desenvolvimento começou com a curiosidade de entender como as coisas funcionam por trás das telas.</p>
+                        <p>Sempre busco aprender novas tecnologias e me manter atualizado com as últimas tendências do desenvolvimento web. Meu objetivo é transformar ideias complexas em soluções simples e elegantes.</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Nome:</span>
+                                <span class="detail-value">Gabriel Neves Pieroni de Souza</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value">gabrielneves05@outlook.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Localização:</span>
+                                <span class="detail-value">Praia Grande - SP, Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <h3 class="skills-title">Minhas Habilidades</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">Javascript</div>
+                            <div class="skill-item">HTML</div>
+                            <div class="skill-item">CSS</div>
+                            <div class="skill-item">Next.js</div>
+                            <div class="skill-item">React</div>
+                            <div class="skill-item">Vue.js</div>
+                            <div class="skill-item">Typescript</div>
+                            <div class="skill-item">Node.js</div>
+                            <div class="skill-item">Tailwind CSS</div>
+                            <div class="skill-item">SASS</div>
+                            <div class="skill-item">MongoDB</div>
+                            <div class="skill-item">PostgreSQL</div>
+                            <div class="skill-item">NestJS</div>
+                            <div class="skill-item">PrismaORM</div>
+                            <div class="skill-item">Express</div>
+                            <div class="skill-item">Git e Github</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Experiência -->
+    <section class="experience" id="experiencia">
+        <div class="experience-container">
+            <h2 class="section-title">Experiência</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Presente</div>
+                        <h3 class="timeline-title">Desenvolvedor Front-end</h3>
+                        <h4 class="timeline-company">JB Mídia</h4>
+                        <p class="timeline-description">
+                            Desenvolvimento de interfaces responsivas e aplicações web utilizando tecnologias bastante atuais como Next.js, React.js, Typescript, Tailwind CSS e outras. Implementação de recursos interativos e otimização de performance em projetos de grande escala.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Next.js</span>
+                            <span class="timeline-tag">React</span>
+                            <span class="timeline-tag">Typescript</span>
+                            <span class="timeline-tag">Tailwind CSS</span>
+                            <span class="timeline-tag">Nest.js</span>
+                            <span class="timeline-tag">PrismaORM</span>
+                            <span class="timeline-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section class="projects" id="projetos">
+        <div class="projects-container">
+            <h2 class="section-title">Projetos pessoais</h2>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <!-- <div class="project-image">
+                        <img src="images/targaryen.png" alt="Projeto E-commerce" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Ver Demo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Ver Código">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" style="width:100%; height:100%; background:linear-gradient(135deg, #2563eb, #8b5cf6);">
+                            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="30" font-weight="bold" font-family="Arial, sans-serif">
+                                EM BREVE
+                            </text>
+                        </svg>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" aria-label="Ver Demo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                </a>
+                                <a href="https://github.com/Gabrielneves05/app-mygastronomy" target="_blank" class="project-link" aria-label="Ver Código">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">My Gastronomy</h3>
+                        <p class="project-description">
+                            Sistema de restaurante com plataforma de comércio eletrônico. Permite que os usuários façam pedidos online e gerenciem seus carrinhos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/gestor-financeiro.png" alt="Dashboard Admin" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://financial-management-system-blond.vercel.app/" target="_blank" class="project-link" aria-label="Ver Demo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                </a>
+                                <a href="https://github.com/Gabrielneves05/financial-management-system" target="_blank" class="project-link" aria-label="Ver Código">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sistema de Gestão Financeira</h3>
+                        <p class="project-description">
+                            Painel de controle financeiro com visualização de dados de acordo a entradas e saídas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">CSS Modules</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/todo-list.png" alt="Lista de Tarefas" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://to-do-list-xi-roan.vercel.app/" target="_blank" class="project-link" aria-label="Ver Demo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                </a>
+                                <a href="https://github.com/Gabrielneves05/to-do-list" target="_blank" class="project-link" aria-label="Ver Código">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Lista de Tarefas</h3>
+                        <p class="project-description">
+                            Aplicação para controle financeiro com categorização automática de gastos, relatórios personalizados e metas de economia.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">CSS Modules</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato/Footer -->
+    <footer class="footer" id="contato">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2 class="section-title">Contato</h2>
+                    <p class="footer-text">Vamos conversar! Estou disponível para novos projetos, oportunidades ou apenas para trocar ideias.</p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-title">Email</h3>
+                                <a href="mailto:gabrielneves05@outlook.com" class="contact-link">gabrielneves05@outlook.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-title">Telefone</h3>
+                                <a href="tel:+5513996451425" class="contact-link">(13) 99645-1425</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-title">Localização</h3>
+                                <p class="contact-detail">São Paulo, Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3 class="contact-title">LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/gabrielnevesp/" class="contact-link">https://www.linkedin.com/in/gabrielnevesp/</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-download">
+                            <a href="assets/curriculo.pdf" download class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download" style="margin-right: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links footer-social">
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </div>
+                <p class="copyright">© 2025 Gabriel. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+</body>
+</html>
